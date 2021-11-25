@@ -1,0 +1,396 @@
+/* Common Rules Start */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+}
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+/* Common Rules End */
+/* Main Section Start */
+main {
+    min-height: 100vh;
+    background-color: var(--white);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+main::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+/* Main Section End */
+/* Stats Section Start */
+.stats-conatiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+/* Stata Heading & Descraption Section Start */
+.stata-descraption h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: .9;
+    color: var(--very-dark-magenta);
+}
+.stata-descraption p {
+    color: var(--dark-grayish-magenta);
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+/* Stata Heading & Descraption Section End */
+/* Rating Stats Section Start */
+.rate {
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--light-grayish-magenta);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.rate i {
+    color: #EF9546;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.rate h2 {
+    color: var(--very-dark-magenta);
+    margin-left: 15px;
+}
+/* Rating Stats Section End */
+/* Stats Section End */
+/* User Opinion Section Start */
+.user-opinion-conatiner {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 999;
+}
+.user-opinion {
+    width: 32%;
+    padding: 35px 25px;
+    min-height: 250px;
+    border-radius: 5px;
+    background-color: var(--very-dark-magenta);
+}
+.user-opinion figure {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.user-opinion figure img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.user-opinion figcaption {
+    line-height: 1.5;
+    color: var(--light-grayish-magenta);
+    font-weight: 500;
+    font-size: 14px;
+}
+.user-opinion figcaption span{
+    font-size: 14px;
+    color: var(--soft-pink);
+}
+.user-opinion p {
+    font-size: 14px;
+    color: var(--light-grayish-magenta);
+    line-height: 1.6;
+}
+/* User Opinion Section End */
+/* Responsive Screen Layout */
+/* Small Mobile Screen */
+@media (min-width: 320px) and (max-width: 424px) {
+    /* Main Section Start */
+    main {
+        padding: 15vh 0;
+        overflow-x: hidden;
+    }
+    main::before {
+        content: url("../images/bg-pattern-top-mobile.svg");
+    }
+    main::after {
+        content: url("../images/bg-pattern-bottom-mobile.svg");
+    }
+    /* Main Section End */
+    /* Main Section End */
+    /* Stats Section Start */
+    .stats-conatiner {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    /* Stata Heading & Descraption Section Start */
+    .stata-descraption {
+        width: 100%;
+    }
+    .stata-descraption p, .stata-descraption h1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    /* Stata Heading & Descraption Section End */
+    /* Rating Stats Section Start */
+    .rate-stats {
+        width: 100%;
+    }
+    .rate {
+        width: 100%;
+    }
+    .rate .icon, .rate h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .rate .icon {
+        margin-bottom: 15px;
+    }
+    /* Rating Stats Section End */
+    /* Stats Section End */
+    /* User Opinion Section Start */
+    .user-opinion-conatiner {
+        width: 90%;
+    }
+    .user-opinion {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* User Opinion Section End */
+}
+/* Large Mobile Screen */
+@media (min-width: 425px) and (max-width: 767px) {
+    /* Main Section Start */
+    main {
+        padding: 15vh 0;
+    }
+    main::before {
+        content: url("../images/bg-pattern-top-mobile.svg");
+    }
+    main::after {
+        content: url("../images/bg-pattern-bottom-mobile.svg");
+    }
+    /* Main Section End */
+    /* Stats Section Start */
+    .stats-conatiner {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    /* Stata Heading & Descraption Section Start */
+    .stata-descraption {
+        width: 100%;
+    }
+    .stata-descraption p, .stata-descraption h1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    /* Stata Heading & Descraption Section End */
+    /* Rating Stats Section Start */
+    .rate-stats {
+        width: 100%;
+    }
+    .rate {
+        width: 100%;
+    }
+    .rate .icon, .rate h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .rate .icon {
+        margin-bottom: 15px;
+    }
+    /* Rating Stats Section End */
+    /* Stats Section End */
+    /* User Opinion Section Start */
+    .user-opinion-conatiner {
+        width: 90%;
+    }
+    .user-opinion {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* User Opinion Section End */
+}
+/* Tablet Screen  */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Main Section Start */
+    main {
+        padding: 15vh 0;
+    }
+    main::before {
+        content: url("../images/bg-pattern-top-mobile.svg");
+    }
+    main::after {
+        content: url("../images/bg-pattern-bottom-mobile.svg");
+    }
+    /* Main Section End */
+    /* Stats Section Start */
+    .stats-conatiner {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    /* Stata Heading & Descraption Section Start */
+    .stata-descraption {
+        width: 100%;
+    }
+    .stata-descraption p, .stata-descraption h1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    /* Stata Heading & Descraption Section End */
+    /* Rating Stats Section Start */
+    .rate-stats {
+        width: 100%;
+    }
+    .rate {
+        width: 100%;
+    }
+    .rate .icon, .rate h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .rate .icon {
+        margin-bottom: 15px;
+    }
+    /* Rating Stats Section End */
+    /* Stats Section End */
+    /* User Opinion Section Start */
+    .user-opinion-conatiner {
+        width: 90%;
+    }
+    .user-opinion {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* User Opinion Section End */
+}
+/* Large Screen */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    /* Main Section Start */
+    main {
+        padding-top: 8vh;
+    }
+    main::before {
+        content: url("../images/bg-pattern-top-desktop.svg");
+    }
+    main::after {
+        content: url("../images/bg-pattern-bottom-desktop.svg");
+    }
+    /* Main Section End */
+    /* Stats Section Start */
+    .stats-conatiner {
+        width: 80%;
+    }
+    /* Stata Heading & Descraption Section Start */
+    .stata-descraption {
+        width: 45%;
+    }
+    /* Stata Heading & Descraption Section End */
+    /* Rating Stats Section Start */
+    .rate-stats {
+        width: 50%;
+    }
+    .rate {
+        width: 90%;
+    }
+    .rate-stats .rate:nth-child(2) {
+        margin-left: 5%;
+    }
+    .rate-stats .rate:nth-child(3) {
+        margin-left: 10%;
+    }
+    /* Rating Stats Section End */
+    /* Stats Section End */
+    /* User Opinion Section Start */
+    .user-opinion-conatiner {
+        width: 80%;
+        margin-top: 50px;
+    }
+    .user-opinion {
+        width: 32%;
+    }
+    .user-opinion-conatiner .user-opinion:nth-child(2) {
+        margin-top: 15px;
+    }
+    .user-opinion-conatiner .user-opinion:nth-child(3) {
+        margin-top: 30px;
+    }
+    /* User Opinion Section End */
+}
+/* Extre Large Screen */
+@media (min-width: 1440px) {
+    /* Main Section Start */
+    main {
+        padding-top: 8vh;
+    }
+    main::before {
+        content: url("../images/bg-pattern-top-desktop.svg");
+    }
+    main::after {
+        content: url("../images/bg-pattern-bottom-desktop.svg");
+    }
+    /* Main Section End */
+    /* Main Section End */
+    /* Stats Section Start */
+    .stats-conatiner {
+        width: 80%;
+    }
+    /* Stata Heading & Descraption Section Start */
+    .stata-descraption {
+        width: 45%;
+    }
+    /* Stata Heading & Descraption Section End */
+    /* Rating Stats Section Start */
+    .rate-stats {
+        width: 50%;
+    }
+    .rate {
+        width: 90%;
+    }
+    .rate-stats .rate:nth-child(2) {
+        margin-left: 5%;
+    }
+    .rate-stats .rate:nth-child(3) {
+        margin-left: 10%;
+    }
+    /* Rating Stats Section End */
+    /* Stats Section End */
+    /* User Opinion Section Start */
+    .user-opinion-conatiner {
+        width: 80%;
+        margin-top: 50px;
+    }
+    .user-opinion {
+        width: 32%;
+    }
+    .user-opinion-conatiner .user-opinion:nth-child(2) {
+        margin-top: 15px;
+    }
+    .user-opinion-conatiner .user-opinion:nth-child(3) {
+        margin-top: 30px;
+    }
+    /* User Opinion Section End */
+}
