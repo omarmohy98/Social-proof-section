@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://github.com/omarmohy98/Social-proof-section)
+- Live Site URL: (https://social-proof-section-7566.onrender.com/)
 
 ## My process
 
