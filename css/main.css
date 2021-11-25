@@ -119,8 +119,9 @@ main::after {
     font-size: 14px;
     color: var(--soft-pink);
 }
-.user-opinion p {
+.user-opinion h3 {
     font-size: 14px;
+    font-weight: 400;
     color: var(--light-grayish-magenta);
     line-height: 1.6;
 }
